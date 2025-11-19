@@ -1,1 +1,1 @@
-# Food-POS-System
+# FOOD-POS-SYSTEM
