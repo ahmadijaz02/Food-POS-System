@@ -16,7 +16,6 @@ unset($_SESSION['old'], $_SESSION['errors']);
     <title>FoodPanda — Delivering Happiness | Landing</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-
 <body class="light-mode">
     
     <div id="signup-modal" class="modal-wrap">
@@ -102,20 +101,7 @@ unset($_SESSION['old'], $_SESSION['errors']);
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div>© <?=date('Y')?> FoodPanda — Delivering Happiness</div>
-
-            <div class="social">
-                <a href="https://www.facebook.com/foodpanda.pk/" target="_blank" rel="noopener">Facebook</a> •
-                <a href="https://www.instagram.com/foodpanda_pk/" target="_blank" rel="noopener">Instagram</a> •
-                <a href="https://twitter.com/foodpanda_pk" target="_blank" rel="noopener">Twitter</a> •
-                <a href="https://www.linkedin.com/company/foodpanda/" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
-
- <section id="pricing" class="pricing">
+    <section id="pricing" class="pricing">
         <div class="container">
             <h2>Pricing</h2>
             <p class="sub">Simple transparent pricing for restaurants of all sizes.</p>
@@ -157,49 +143,7 @@ unset($_SESSION['old'], $_SESSION['errors']);
         </div>
     </section>
 
-<section id="pricing" class="pricing">
-        <div class="container">
-            <h2>Pricing</h2>
-            <p class="sub">Simple transparent pricing for restaurants of all sizes.</p>
-
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <div class="price-header">Basic</div>
-                    <div class="price-amt">Free</div>
-                    <ul>
-                        <li>Order management</li>
-                        <li>Email support</li>
-                        <li>Basic reports</li>
-                    </ul>
-                    <a class="btn" href="#contact">Start Free</a>
-                </div>
-
-                <div class="price-card featured">
-                    <div class="price-header">Pro</div>
-                    <div class="price-amt">PKR 2,499 / mo</div>
-                    <ul>
-                        <li>Everything in Basic</li>
-                        <li>Advanced analytics</li>
-                        <li>Priority support</li>
-                    </ul>
-                    <a class="btn btn-primary" href="#contact">Get Pro</a>
-                </div>
-
-                <div class="price-card">
-                    <div class="price-header">Enterprise</div>
-                    <div class="price-amt">Contact Us</div>
-                    <ul>
-                        <li>Custom integrations</li>
-                        <li>Account manager</li>
-                        <li>Service-level agreement</li>
-                    </ul>
-                    <a class="btn" href="#contact">Contact Sales</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <section id="contact" class="contact">
+    <section id="contact" class="contact">
         <div class="container contact-grid">
             <div class="contact-info">
                 <h2>Contact Us</h2>
@@ -246,6 +190,19 @@ unset($_SESSION['old'], $_SESSION['errors']);
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>© <?=date('Y')?> FoodPanda — Delivering Happiness</div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/foodpanda.pk/" target="_blank" rel="noopener">Facebook</a> •
+                <a href="https://www.instagram.com/foodpanda_pk/" target="_blank" rel="noopener">Instagram</a> •
+                <a href="https://twitter.com/foodpanda_pk" target="_blank" rel="noopener">Twitter</a> •
+                <a href="https://www.linkedin.com/company/foodpanda/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const modal = document.getElementById('signup-modal');
@@ -283,6 +240,5 @@ unset($_SESSION['old'], $_SESSION['errors']);
             });
         });
     </script>
-
 </body>
 </html>
