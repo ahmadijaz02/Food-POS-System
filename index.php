@@ -16,7 +16,7 @@ unset($_SESSION['old'], $_SESSION['errors']);
     <title>FoodPanda — Delivering Happiness | Landing</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-  
+
 <body class="light-mode">
     
     <div id="signup-modal" class="modal-wrap">
@@ -101,6 +101,57 @@ unset($_SESSION['old'], $_SESSION['errors']);
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>© <?=date('Y')?> FoodPanda — Delivering Happiness</div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/foodpanda.pk/" target="_blank" rel="noopener">Facebook</a> •
+                <a href="https://www.instagram.com/foodpanda_pk/" target="_blank" rel="noopener">Instagram</a> •
+                <a href="https://twitter.com/foodpanda_pk" target="_blank" rel="noopener">Twitter</a> •
+                <a href="https://www.linkedin.com/company/foodpanda/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('signup-modal');
+            const openBtn = document.getElementById('open-signup-btn');
+            const closeBtn = document.querySelector('.modal-close-btn');
+            const body = document.body;
+            const toggleBtn = document.getElementById('dark-mode-toggle');
+            const modeIcon = document.getElementById('mode-icon');
+            
+            // --- MODAL LOGIC ---
+            openBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.style.display = 'flex';
+            });
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // --- DARK MODE LOGIC ---
+            // 1. Check local storage for preference
+            const savedMode = localStorage.getItem('theme') || 'light-mode';
+            body.className = savedMode;
+            modeIcon.textContent = savedMode === 'dark-mode' ? '☀️' : '🌙';
+
+            toggleBtn.addEventListener('click', () => {
+                const currentMode = body.className === 'dark-mode' ? 'light-mode' : 'dark-mode';
+                body.className = currentMode;
+                localStorage.setItem('theme', currentMode);
+                modeIcon.textContent = currentMode === 'dark-mode' ? '☀️' : '🌙';
+            });
+        });
+    </script>
 
 </body>
 </html>
