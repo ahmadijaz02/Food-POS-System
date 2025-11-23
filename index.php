@@ -16,6 +16,25 @@ unset($_SESSION['old'], $_SESSION['errors']);
     <title>FoodPanda — Delivering Happiness | Landing</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+  
+<body class="light-mode">
+    
+    <div id="signup-modal" class="modal-wrap">
+        <div class="modal-content">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-header">
+                <h2>Join FoodPanda Partner Hub</h2>
+                <p>Register now to start accepting orders from millions of customers.</p>
+            </div>
+            <form>
+                <label>Restaurant Name <input type="text" placeholder="e.g., The Golden Wok" required></label>
+                <label>Email <input type="email" placeholder="restaurant@example.com" required></label>
+                <label>Password <input type="password" required></label>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+            <p class="modal-footer-text">Already a partner? <a href="#">Log In</a></p>
+        </div>
+    </div>
 
     <header class="nav-wrap">
         <div class="container nav">
@@ -83,6 +102,5 @@ unset($_SESSION['old'], $_SESSION['errors']);
         </div>
     </section>
 
- 
 </body>
 </html>
