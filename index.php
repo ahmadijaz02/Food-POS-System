@@ -199,6 +199,54 @@ unset($_SESSION['old'], $_SESSION['errors']);
         </div>
     </section>
 
+  <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p class="sub">Want a demo or partnership? Fill out the form and we'll be in touch.</p>
+
+                <ul class="contact-list">
+                    <li>📍 Lahore, Pakistan</li>
+                    <li>📧 sales@foodpanda.example</li>
+                    <li>📞 +92 300 0000000</li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <?php if (!empty($errors)): ?>
+                    <div class="alert">
+                        <strong>There were errors with your submission:</strong>
+                        <ul>
+                            <?php foreach ($errors as $e): ?>
+                                <li><?=htmlspecialchars($e)?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
+
+                <form method="post" action="contact.php">
+                    <label>
+                        Name
+                        <input type="text" name="name" value="<?=htmlspecialchars($old['name'] ?? '')?>" required>
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" value="<?=htmlspecialchars($old['email'] ?? '')?>" required>
+                    </label>
+
+                    <label>
+                        Message
+                        <textarea rows="5" name="message" required><?=htmlspecialchars($old['message'] ?? '')?></textarea>
+                    </label>
+
+                    <input type="hidden" name="ticket" value="POS-000"> <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <script>
