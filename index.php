@@ -16,6 +16,7 @@ unset($_SESSION['old'], $_SESSION['errors']);
     <title>FoodPanda — Delivering Happiness | Landing</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+  
 <body class="light-mode">
     
     <div id="signup-modal" class="modal-wrap">
@@ -67,6 +68,36 @@ unset($_SESSION['old'], $_SESSION['errors']);
             </div>
             <div class="hero-mockup js-mockup-rotate">
                 <img src="foodp.png" alt="Food delivery system tablet mockup" class="mockup-img-fixed">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <p class="sub">Everything restaurants need to run faster and serve customers better.</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Order Management</h3>
+                    <p>Accept, track and update orders in real-time with an intuitive interface.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Sales Analytics</h3>
+                    <p>Daily and weekly sales, peak hour reports and menu performance insights.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3 class="feature-header">Easy Integration</h3>
+                    <p>Integrates with your existing POS, accounting and third-party delivery platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="feature-header">Inventory Alerts</h3>
+                    <p>Low-stock alerts and usage patterns to reduce shortages and waste.</p>
+                </div>
             </div>
         </div>
     </section>
