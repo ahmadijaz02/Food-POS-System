@@ -16,6 +16,7 @@ unset($_SESSION['old'], $_SESSION['errors']);
     <title>FoodPanda — Delivering Happiness | Landing</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body class="light-mode">
     
     <div id="signup-modal" class="modal-wrap">
@@ -101,8 +102,6 @@ unset($_SESSION['old'], $_SESSION['errors']);
         </div>
     </section>
 
-   
-
     <footer class="footer">
         <div class="container footer-grid">
             <div>© <?=date('Y')?> FoodPanda — Delivering Happiness</div>
@@ -153,5 +152,6 @@ unset($_SESSION['old'], $_SESSION['errors']);
             });
         });
     </script>
+
 </body>
 </html>
