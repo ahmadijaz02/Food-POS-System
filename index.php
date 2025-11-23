@@ -199,8 +199,6 @@ unset($_SESSION['old'], $_SESSION['errors']);
         </div>
     </section>
 
-
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const modal = document.getElementById('signup-modal');
