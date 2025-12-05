@@ -1,3 +1,5 @@
+
+\\\
 # FOOD-Pos-SYSTEM
 
 FoodPanda POS is a lightweight web-based system designed for restaurant partners to interact with an online food delivery platform. The system provides a promotional landing page, feature highlights, pricing tiers, a contact form with validation, dark/light mode support, and a thank-you confirmation page.
